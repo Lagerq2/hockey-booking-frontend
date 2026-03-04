@@ -1,3 +1,4 @@
+/*
 export const getMatches = async () => {
   // Mock-data tills backend är redo
   return Promise.resolve([
@@ -23,3 +24,18 @@ export const getMatches = async () => {
     { id: 11, homeTeam: "Team E", awayTeam: "Team F", date: "2026-02-22", time: "20:00" }
   ])
 }
+  */
+
+export const getMatches = async () => {
+  try {
+    const response = await fetch("http://localhost:8080/matches"); // byt URL om backend körs på annan port
+    if (!response.ok) {
+      throw new Error("Nätverksfel: " + response.status);
+    }
+    const matches = await response.json();
+    return matches;
+  } catch (error) {
+    console.error("Kunde inte hämta matcher:", error);
+    return []; // fallback, returnerar tom array om något går fel
+  }
+};
