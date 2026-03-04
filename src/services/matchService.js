@@ -26,6 +26,8 @@ export const getMatches = async () => {
 }
   */
 
+
+//fetching matches from database
 export const getMatches = async () => {
   try {
     const response = await fetch("http://localhost:8080/matches"); // byt URL om backend körs på annan port
