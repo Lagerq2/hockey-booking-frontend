@@ -1,9 +1,9 @@
 function MatchCard({ match }) {
 
-  const [homeTeam, awayTeam] = match.match.split(" vs ");
+  const {homeTeam, awayTeam, date, time} = match;
   const dateObj = new Date(match.matchDateTime);
-  const date = dateObj.toLocaleDateString();
-  const time = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  //const date = dateObj.toLocaleDateString();
+  //const time = dateObj.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   return (
     <div className="match-card">
         <h3>{homeTeam} vs {awayTeam}</h3>

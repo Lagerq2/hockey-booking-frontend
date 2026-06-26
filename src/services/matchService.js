@@ -1,4 +1,4 @@
-/*
+
 export const getMatches = async () => {
   // Mock-data tills backend är redo
   return Promise.resolve([
@@ -14,20 +14,13 @@ export const getMatches = async () => {
     { id: 10, homeTeam: "Team S", awayTeam: "Team T", date: "2026-02-21", time: "19:00" },
     { id: 11, homeTeam: "Team U", awayTeam: "Team V", date: "2026-02-22", time: "20:00" },
     { id: 12, homeTeam: "Team W", awayTeam: "Team X", date: "2026-02-23", time: "17:00" },
-    { id: 8, homeTeam: "Team G", awayTeam: "Team H", date: "2026-02-23", time: "17:00" },
-    { id: 9, homeTeam: "Team A", awayTeam: "Team B", date: "2026-02-20", time: "18:00" },
-    { id: 10, homeTeam: "Team C", awayTeam: "Team D", date: "2026-02-21", time: "19:00" },
-    { id: 11, homeTeam: "Team E", awayTeam: "Team F", date: "2026-02-22", time: "20:00" },
-    { id: 8, homeTeam: "Team G", awayTeam: "Team H", date: "2026-02-23", time: "17:00" },
-    { id: 9, homeTeam: "Team A", awayTeam: "Team B", date: "2026-02-20", time: "18:00" },
-    { id: 10, homeTeam: "Team C", awayTeam: "Team D", date: "2026-02-21", time: "19:00" },
-    { id: 11, homeTeam: "Team E", awayTeam: "Team F", date: "2026-02-22", time: "20:00" }
   ])
 }
-  */
+  
 
 
 //fetching matches from database
+/*
 export const getMatches = async () => {
   try {
     const response = await fetch("http://localhost:8080/matches"); // byt URL om backend körs på annan port
@@ -41,3 +34,4 @@ export const getMatches = async () => {
     return []; // fallback, returnerar tom array om något går fel
   }
 };
+*/
